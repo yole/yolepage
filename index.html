@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Dmitry Jemerov - yole.ru</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="github-activity.css">
+    <link rel="stylesheet" href="embedagram.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="github-activity.js"></script>
+    <script type="text/javascript" src="jquery-embedagram.pack.js"></script>
+
+    <script>
+        function loadData() {
+            GitHubActivity.feed({
+                username: "yole",
+                selector: "#feed",
+                limit: 3 // optional
+            });
+
+            $('#slideshow').embedagram({
+                instagram_id: 448661605,
+                thumb_width: 306,
+                limit: 3
+                    });
+        }
+    </script>
+</head>
+<body onload="loadData()">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-4">
+            <h1>Dmitry Jemerov</h1>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-4">
+        <img src="yole2015.jpg" class="img-responsive"/>
+    </div>
+    <div class="col-md-8">
+
+        <p>Nice to meet you!</p>
+
+        <p>I'm Dmitry Jemerov, a software developer originally from St.Petersburg, Russia, now living in Munich, Germany.</p>
+
+        <p>I've spent most of my career working at <a href="http://www.jetbrains.com">JetBrains</a>. I started as the lead developer
+        of Omea, a now-defunct information management tool built with .NET. Then I moved to work on IntelliJ IDEA and
+        IntelliJ Platform-based IDEs. Among other things, I was the original creator and lead developer of
+        <a href="https://www.jetbrains.com/pycharm/">PyCharm</a>.</p>
+        <p>I also spent a year at Google, working on <a href="https://cloud.google.com/tools/cloud-repositories/docs/">Cloud Source Repositories</a>,
+        <a href="https://cloud.google.com/tools/cloud-debugger/">Cloud Debugger</a> and other projects related to developer tooling on Google Cloud Platform.</p>
+        <p>Right now I'm working on <a href="http://kotlinlang.org/">Kotlin</a>,
+        a new programming language that JetBrains is building. I'm leading the team working on the IntelliJ IDEA plugin for Kotlin,
+        as well as co-writing a book, <a href="https://www.manning.com/books/kotlin-in-action">Kotlin in Action</a>.</p>
+
+        <p>Some of my personal projects include:</p>
+        <ul>
+            <li>
+                <a href="http://infexp.sourceforge.net/">Infinity Explorer</a> (2000), a data viewer for Infinity Engine-based games;
+            </li>
+            <li>
+                <a href="http://sourceforge.net/projects/syndirella/">Syndirella</a> (2003), a Windows RSS reader;
+            </li>
+            <li>
+                <a href="https://github.com/yole/structorian">Structorian</a> (2009), a flexible viewer for structured binary data;
+            </li>
+            <li>
+                <a href="http://www.rock-chords.ru">rock-chords.ru</a> (2014), a collection of chords and tabs for Russian rock music.
+            </li>
+        </ul>
+
+        <h3>My Videos</h3>
+        <p>Some of my interviews and conference presentations might be worth watching. Here's a few videos:</p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=bfQh1tcOPsc">From Renamer Plugin to Polyglot IDE</a> (2013, English) -
+                covers the history and the development process of IntelliJ IDEA;</li>
+            <li><a href="https://www.youtube.com/watch?v=pr7faOqruQY">No Slides</a> (2015, Russian) - a large interview covering
+                my work at JetBrains and at Google.</li>
+        </ul>
+
+        <h3>My Photos</h3>
+        <ul id="slideshow"></ul>
+        <br/>Follow <a href="http://www.instagram.com/dmitryjemerov">dmitryjemerov</a> on Instagram for more.
+
+        <h3>My Development Activity</h3>
+        <div id="feed"></div>
+
+        <h3>Follow Me</h3>
+        <a href="http://twitter.com/intelliyole">@intelliyole</a> on Twitter
+
+        <h3>Contact Me</h3>
+        <a href="mailto:yole@yole.ru">yole@yole.ru</a>
+    </div>
+</div>
+</div></body>
+</html>
